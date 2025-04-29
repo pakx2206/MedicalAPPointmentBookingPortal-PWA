@@ -1,1 +1,26 @@
-<p>home-page works!</p>
+<div
+  class="d-flex flex-column justify-content-center align-items-center text-center text-white position-relative"
+  style="
+    background: url('/assets/bg.png') no-repeat center center/cover;
+    min-height: calc(100vh - 56px - 56px);
+  "
+>
+  <!-- półprzezroczysta nakładka -->
+  <div
+    class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"
+    aria-hidden="true"
+  ></div>
+
+  <!-- właściwa treść -->
+  <div class="position-relative px-3">
+    <h1 class="display-5 fw-bold mb-3">Witamy w Medical Appointment Booking</h1>
+    <p class="lead mb-4">Projekt testowy na przedmiot PP5. Przetestuj już dziś!</p>
+    <button
+      class="btn btn-success btn-lg"
+      (click)="navigateToAppointment()"
+      aria-label="Przejdź do rezerwacji wizyty"
+    >
+      Umów wizytę już dziś!
+    </button>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule }  from '@angular/forms';
 import { ClinicRoutingModule } from './clinic-routing.module';
 
 
@@ -8,6 +8,7 @@ import { ClinicRoutingModule } from './clinic-routing.module';
   declarations: [],
   imports: [
     CommonModule,
+    FormsModule,
     ClinicRoutingModule
   ]
 })
