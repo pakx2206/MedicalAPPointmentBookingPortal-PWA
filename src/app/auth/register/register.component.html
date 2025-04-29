@@ -1,0 +1,36 @@
+<div class="auth-card mx-auto mt-5" style="max-width: 400px;">
+    <h2 class="mb-4 text-center">Rejestracja</h2>
+    <form (ngSubmit)="onRegister()">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="form-control"
+          [(ngModel)]="email"
+          name="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Hasło</label>
+        <input
+          id="password"
+          type="password"
+          class="form-control"
+          [(ngModel)]="password"
+          name="password"
+          required
+        />
+      </div>
+      <button class="btn btn-success w-100" type="submit">Zarejestruj</button>
+    </form>
+  
+    <p class="text-danger mt-3 text-center" *ngIf="error">{{ error }}</p>
+  
+    <div class="text-center mt-3">
+      Masz już konto?
+      <a routerLink="/login">Zaloguj się</a>
+    </div>
+  </div>
+  
